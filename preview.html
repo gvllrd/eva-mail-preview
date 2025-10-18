@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aperçu du mail EVA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mail-container">
+    <h2>📩 Aperçu de ton message</h2>
+    <div id="mail-content">Chargement...</div>
+  </div>
+
+  <script>
+    // Récupère le contenu HTML encodé dans l’URL
+    const params = new URLSearchParams(window.location.search);
+    const mailHTML = decodeURIComponent(params.get("html") || "Pas de contenu trouvé 😅");
+    document.getElementById("mail-content").innerHTML = mailHTML;
+  </script>
+</body>
+</html>
