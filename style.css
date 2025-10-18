@@ -1,0 +1,19 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8f9fb;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.mail-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 24px;
+  max-width: 600px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  color: #5a5efb;
+}
